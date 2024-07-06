@@ -13,7 +13,7 @@ config({
 
 app.use(bodyparser.json());
 app.use(cors({
-  origin:true, 
+  origin:true,  
   methods:["GET","POST","PUT","DELETE"],
   credentials:true
 }))
@@ -23,7 +23,7 @@ mongoose
   .connect(process.env.Mongo_URL,
     
     { 
-      dbName: "MERN_PROJECT_Contact_Keeper",
+      dbName: "MERN_PROJECT_Contact_Keeper", 
     }
   )
   .then(() => console.log("mongodb connected..."));
